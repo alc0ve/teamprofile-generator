@@ -18,6 +18,36 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="team-area col-12 d-flex justify-content-center">
+
+    <div class="card employee-card" style="width: 18rem;">
+        <div class="card-header text-white bg-primary mb-3">
+            <h2>${manager.name}<br></h2>
+            <h3>☕️ Manager</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">ID: ${manager.id}</li>
+            <li class="list-group-item">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></li>
+            <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
+        </ul>
+    </div>
+
+    <div class="card employee-card" style="width: 18rem;">
+        <div class="card-header text-white bg-primary mb-3">
+            <h2>${engineer.name} <br></h2>
+            <h3>👓 Engineer</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">ID: ${engineer.id}</li>
+            <li class="list-group-item">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></li>
+            <li class="list-group-item">GitHub: <a target="_blank" href="https://github.com/${engineer.gitHubUsername}"> ${engineer.gitHubUsername}</a></li>
+        </ul>
+    </div>
+
+        </div>
+        </div>
 </body>
 
 </html>
