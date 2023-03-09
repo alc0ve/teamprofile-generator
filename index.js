@@ -37,6 +37,7 @@ function managerQuestions() {
     .then((answer) => {
         const teamManager = new Manager(answer.name, answer.id, answer.email, answer.officeNumber);
         console.log(teamManager);
+        addMember();
     }
     )
 }
@@ -54,6 +55,13 @@ function addMember(){
             choices: ["Engineer", "Intern", "I don't want to add any more team members."],
         }
     ])
+    .then(answer => {
+        if (answer.addMember === Engineer) {
+            engineerQuestions();
+        } else if (answer.addMember === Intern) {
+            internQuestions();
+        }
+    })
 }
 
 function engineerQuestions() { 
@@ -79,10 +87,14 @@ function engineerQuestions() {
       message: "What is your engineer's GitHub username?",
       name: "github",
     },
-  ]);
+  ])
+  .then((answer) => {
+    const teamEngineer = new Engineer(answer.name, answer.id, answer.email, answer.github);
+    console.log(teamEngineer);
+  });
 }
 
-function internQuestionsArray() {
+function internQuestions() {
     inquirer
     .prompt([
     {
@@ -105,5 +117,9 @@ function internQuestionsArray() {
       message: "What school does your intern attend?",
       name: "school",
     },
-  ]);
+  ])
+  .then((answer) => {
+    const newIntern = Intern(answer.name, answer.id, answer.email, answer.school);
+    console.log(newIntern);
+  });
 }
