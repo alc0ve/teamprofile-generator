@@ -13,7 +13,7 @@ describe ("Manager", () => {
         expect(e.getRole()).toEqual(managerValue);
       });
       
-    it("Can get office number via getOffice()", () => {
+    it("Can get office number via getOfficeNumber()", () => {
         const testValue = 100;
         const e = new testManager("name", 1, "test@test.com", testValue);
         expect(e.getOfficeNumber()).toEqual(testValue);
