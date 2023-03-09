@@ -1,0 +1,1 @@
+const testEmployee = require('../lib/Employee');
