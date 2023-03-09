@@ -143,7 +143,7 @@ function internQuestions() {
     },
   ])
   .then((answer) => {
-    const newIntern = Intern(answer.name, answer.id, answer.email, answer.school);
+    const newIntern = new Intern(answer.name, answer.id, answer.email, answer.school);
     console.log(newIntern);
     generateMembers.push(newIntern);
     addMember();
