@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
-const OUTPUT_DIR = path.resolve(__dirname, 'distPath');
+const OUTPUT_DIR = path.resolve(__dirname, 'dist');
 const distPath = path.join(OUTPUT_DIR, 'team.html');
 
 //Bring in class files
