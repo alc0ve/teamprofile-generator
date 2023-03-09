@@ -1,3 +1,3 @@
 //generate html
 
-module.exports = helper;
+// module.exports = helper;
