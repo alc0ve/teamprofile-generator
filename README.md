@@ -33,9 +33,9 @@ This application has dependencies: inquirer and jest.
 
 Instructions are listed above. Refer to screenshots for demo of application and tests.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![html screenshot](./images/Screenshot-html.png)
 
-![alt text](assets/images/screenshot.png)
+![testing screenshot](./images/Screenshot-test.png)
 
 ## Credits
 
